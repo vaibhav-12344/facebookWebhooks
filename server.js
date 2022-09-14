@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
-const FACEBOOK_PAGE_ACCESS_TOKEN = 'EAAQQW60hXm8BAPykLZCVJ28teflVaudpzZCrXlcpfrmU2zd4iFc7g9ypL5bnffbQbReZBUw1nOkpG9hn7ZB1AcCfGAKtRR6HQLxyYfPOFFDij3o5KccJyKugycvweuhkSbwaENYJZBNKmmANiZAisRiXBV0OYBSZCTv7wfYhn7dNxxPyq4D01CRGn575jOwcIsZD';
+const FACEBOOK_PAGE_ACCESS_TOKEN = 'TOKEN';
 app.use(bodyParser.json());
 app.get('/webhook', (req, res) => {
     if (req.query['hub.verify_token'] === 'vaibhav123') {
