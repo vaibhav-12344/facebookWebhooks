@@ -6,7 +6,7 @@ const port = 3000;
 const FACEBOOK_PAGE_ACCESS_TOKEN = 'TOKEN';
 app.use(bodyParser.json());
 app.get('/webhook', (req, res) => {
-    if (req.query['hub.verify_token'] === 'vaibhav123') {
+    if (req.query['hub.verify_token'] === 'custom_verify_token') {
         res.send(req.query['hub.challenge']);
         return;
     }
